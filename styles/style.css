@@ -1,0 +1,128 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito sans", sans-serif;
+  background-color: rgb(79, 82, 84);
+}
+
+.main-header {
+  width: 100%;
+  height: 10rem;
+  color: whitesmoke;
+  background-color: rgb(118, 13, 174);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1.5rem 2%;
+}
+
+#form-edit-name {
+  color: rgb(60, 51, 39);
+  background-color: rgba(193, 181, 203, 0.8);
+  width: 60%;
+  position: relative;
+  margin: 2rem auto;
+  display: none;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#form-edit-name h2 {
+  margin-bottom: 2px;
+}
+
+#form-edit-name input {
+  width: 45%;
+  height: 1.75rem;
+  border: 1px solid rgba(56, 33, 78, 0.592);
+  border-radius: 3px;
+  border-style: none;
+}
+
+#form-edit-name div {
+  margin-top: 10px;
+  height: 3rem;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#form-edit-name div p {
+  padding: 6px 15px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+}
+  /* color: blueviolet;
+  background-color: rgba(200, 174, 224, 0.8);
+  
+} */
+
+#btn-cancel {
+  color: blueviolet;
+  background-color: transparent;
+}
+
+#btn-submit{
+  color: whitesmoke;
+  background-color: blueviolet;
+}
+#btn-submit:hover{
+  background-color: rgb(144, 64, 219);;
+}
+.player-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: 1rem auto; */
+}
+
+.player-box {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  color: rgb(118, 13, 174);
+  background-color: rgba(157, 139, 168, 0.616);
+  margin: 1rem 5rem;
+}
+
+.player-box p {
+  font: inherit;
+  font-size: 24px;
+  font-weight: bolder;
+  color: rgb(56, 33, 78);
+}
+
+.player-box .btn-edit {
+  width: 4em;
+  color: rgb(141, 48, 227);
+  font-size: 32px;
+  font-weight: bolder;
+  font: inherit;
+  padding: 5px 12px;
+  margin: 0.5rem auto;
+  border-radius: 3px;
+}
+.btn-edit:hover {
+  cursor: pointer;
+  background-color: rgba(199, 176, 224, 0.46);
+}
+
+.btn-start-game {
+  color: whitesmoke;
+  background-color: rgb(115, 32, 193);
+  margin: 2rem auto;
+  text-align: center;
+  align-items: center;
+  width: 12rem;
+  padding: 12px 14px;
+}
