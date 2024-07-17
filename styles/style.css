@@ -17,33 +17,34 @@ body {
   padding: 1.5rem 2%;
 }
 
-#backdrop {
+#back-drop {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  display: block;
+  display: none;
 }
 
 @media (min-width: 48rem) {
-  #form-edit-name {
+  #form-edit-name{
     left: calc(50% - 20rem);
     width: 40rem;
   }
 }
 
 #form-edit-name {
-  color: rgb(60, 51, 39);
-  background-color: rgba(193, 181, 203, 0.8);
-  width: 60%;
-  position: relative;
-  margin: 2rem auto;
+  position: fixed;
+  top: 20%;
+  left: 15%;
+  right: 15%;
+  width: 70%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   display: none;
-  text-align: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 #form-edit-name h2 {
