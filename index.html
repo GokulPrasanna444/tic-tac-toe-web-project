@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/style.css" />
   </head>
   <body>
+    <div id="back-drop"></div>
     <header>
       <div class="main-header">
         <h1>Play Tic, Tac, Toe</h1>
@@ -48,5 +49,27 @@
     </div>
 
     <p class="btn-start-game">Start New Game</p>
+
+    <section id="active-game">
+      <article id="game-over">
+        <h2>You won, <span id="winner-name">PLAYER NAME</span>!</h2>
+        <p>Click "Start New Game" above, to start a new game!</p>
+      </article>
+
+      <p>It's your turn <span id="active-player-name">PLAYER NAME</span>!</p>
+      <ol id="game-board">
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        
+        <li></li>
+        <li></li>
+        <li></li>
+      </ol>
+    </section>
   </body>
 </html>

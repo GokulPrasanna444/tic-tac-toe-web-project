@@ -11,12 +11,27 @@ body {
   height: 10rem;
   color: whitesmoke;
   background-color: rgb(118, 13, 174);
-  display: flex;
+  display: block;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
   padding: 1.5rem 2%;
+}
+
+#backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: block;
+}
+
+@media (min-width: 48rem) {
+  #form-edit-name {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
 }
 
 #form-edit-name {
@@ -76,7 +91,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* margin: 1rem auto; */
 }
 
 .player-box {
