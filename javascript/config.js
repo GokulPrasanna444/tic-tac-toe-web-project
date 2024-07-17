@@ -9,11 +9,11 @@ function closePlayerConfig() {
 }
 
 function savePlayerConfig(event) {
-    console.log(event)
+    console.log(event);
   event.preventDefault();
   //   const inputNameFieldValue = document.getElementById("input-name-field");
   //   const enteredPlayername = inputNameFieldValue.value;
-  const formData = new FormData("#input-form-data");
+  const formData = new FormData(event.target);
   //   const enteredPlayername = formData.get("playername").trim();
   console.log(enteredPlayernameg);
   if (!enteredPlayername) {
