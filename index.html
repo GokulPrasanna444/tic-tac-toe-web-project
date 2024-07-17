@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@400display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
     <title>Tic-Tac-Toe</title>
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="/javascript/config.js" defer></script>
+    <script src="/javascript/game.js" defer></script>
     <script src="/javascript/app.js" defer></script>
   </head>
   <body>
@@ -21,31 +25,40 @@
         <p>Built with HTML, CSS , JavaScripe and ofcourse lots of love</p>
       </div>
     </header>
-    <aside id="form-edit-name">
+    <form id="form-edit-name">
       <h2>Choose Your Name</h2>
-      <h3>Player Name</h3>
-      <input id="input-name-field" type="text" required>
+      <div class="form-control">
+        
+        <h3>Player Name</h3>
+        <input
+          id="input-name-field"
+          name="playername"
+          type="text"
+          placeholder="Player Name"
+        />
+      </div>
+      <p id="config-errors"></p>
       <div>
-        <p id="btn-cancel" type="clear">Cancel</p>
-        <p id="btn-submit">Confirm</p>
+        <p id="btn-cancel" type="reset">Cancel</p>
+        <p id="btn-submit" type="submit">Confirm</p>
       </div>
     </form>
     <div class="player-container">
       <section class="player-box">
-        <aside>
+        <article>
           <h3>Player 1</h3>
           <h2 id="player-name-1">PlayerName 1</h2>
           <p>X</p>
           <p class="btn-edit" id="btn-edit-1">Edit</p>
-        </aside>
+        </article>
       </section>
       <section class="player-box">
-        <aside>
+        <article>
           <h3>Player 2</h3>
           <h2 id="player-name-2">PlayerName 2</h2>
           <p>O</p>
           <p class="btn-edit" id="btn-edit-2">Edit</p>
-        </aside>
+        </article>
       </section>
     </div>
 
