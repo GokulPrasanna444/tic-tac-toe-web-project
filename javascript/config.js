@@ -9,12 +9,13 @@ function closePlayerConfig() {
 }
 
 function savePlayerConfig(event) {
+    console.log(event)
   event.preventDefault();
   //   const inputNameFieldValue = document.getElementById("input-name-field");
   //   const enteredPlayername = inputNameFieldValue.value;
-  const formData = new FormData(event.target);
+  const formData = new FormData("#input-form-data");
   //   const enteredPlayername = formData.get("playername").trim();
-  console.log(enteredPlayername);
+  console.log(enteredPlayernameg);
   if (!enteredPlayername) {
     event.target.firstElementChild.classList.add("error");
     errorsOutputElement.textContent = "Please enter a valid name!";
